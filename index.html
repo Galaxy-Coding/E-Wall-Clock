@@ -1,21 +1,22 @@
 <html>
 	<head>
-		<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 		<title>Clock</title>
 		<meta
 			name="viewport"
-			content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+			content="width=device-width, user-scalable="no", initial-scale=1.0 shrink-to-fit=no"
 		/>
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
 		<meta content="utf-8" http-equiv="encoding" />
 
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		<!-- Javascript -->
+		<!-- JS -->
 		<script type="text/javascript" src="javascript/index.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 	</head>
 
 	<body scroll="no">
+		<div id="MyClockDisplay" ></div>
 		<div class="clock">
 			<div class="hour">
 				<div class="hr" id="hr"></div>
@@ -29,9 +30,8 @@
 		</div>
 		<br>
 		<br>
-		<div id="MyClockDisplay" ></div>
 
-    
+	
 	</body>
 	<script type="text/javascript">
 		initialize();
