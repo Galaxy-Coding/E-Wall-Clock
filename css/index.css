@@ -2,7 +2,12 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10+ and Edge */
+	user-select: none; /* Standard syntax */ 
 }
+
+
 
 body {
 	display: flex;
@@ -18,7 +23,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url('../Image/clock.png');
+	background: url('https://raw.githubusercontent.com/Galaxy-Coding/clock/master/Image/clock.png');
 	background-size: cover;
 	border: 4px solid #091921;
 	border-radius: 50%;
@@ -101,13 +106,13 @@ body {
 	border-radius: 6px 6px 0 0;
 }
 #MyClockDisplay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    color: #17D4FE;
-    font-size: 60px;
-    font-family: Orbitron;
-    letter-spacing: 7px;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: red;
+	font-size: 60px;
+	font-family: Orbitron;
+	letter-spacing: 7px;
    
 }
