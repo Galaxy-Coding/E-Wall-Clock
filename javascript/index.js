@@ -39,9 +39,8 @@ function showTime(){
 	var time = h + ":" + m + ":" + s + " " + session;
 	document.getElementById("MyClockDisplay").innerText = time;
 	document.getElementById("MyClockDisplay").textContent = time;
+	console.log(time)
 	
 	setTimeout(showTime, 1000);
 	
 }
-
-showTime();
