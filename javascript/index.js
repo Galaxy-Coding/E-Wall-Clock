@@ -21,6 +21,8 @@ function showTime(){
 	var h = date.getHours(); // 0 - 23
 	var m = date.getMinutes(); // 0 - 59
 	var s = date.getSeconds(); // 0 - 59
+	var backcolornum = (h / 60) + m
+	var backcolor = backcolornum/5.64705882353
 	var session = "AM";
 	
 	if(h == 0){
@@ -40,7 +42,6 @@ function showTime(){
 	document.getElementById("MyClockDisplay").innerText = time;
 	document.getElementById("MyClockDisplay").textContent = time;
 	console.log(time)
-	
+	document.getElementById("body").style.background-color = "backcolor";
 	setTimeout(showTime, 1000);
-	
 }
